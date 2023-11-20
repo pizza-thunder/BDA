@@ -1,4 +1,7 @@
-s=input()
-print('xor with 0')
-for i in s:#1st
-print(chr(ord(i)^0),end='')
+s="Crptography"
+ans=""
+n=len(s)
+for i in range(n):
+    ans+=chr(ord(s[i])^0)
+print(s)
+print(ans)
