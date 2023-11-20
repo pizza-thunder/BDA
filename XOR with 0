@@ -1,0 +1,4 @@
+s=input()
+print('xor with 0')
+for i in s:#1st
+print(chr(ord(i)^0),end='')
