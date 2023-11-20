@@ -1,9 +1,15 @@
-print('xor with 127')
-for i in s:#2nd
-print(chr(ord(i)^127),end='')
-print('and with 127')
-for i in s:
-print(chr(ord(i)&127),end='')
-print('or with 127')
-for i in s:
-print(chr(ord(i)|127),end='')
+s="Cryptography and N S" 
+ans=""
+ans1=""
+ans2=""
+n=len(s)
+for i in range(n):
+    ans+=chr(ord(s[i])^127)
+for i in range(n):
+    ans1+=chr(ord(s[i])|127)
+for i in range(n):
+    ans2+=chr(ord(s[i])&127)
+print(s)
+print(ans)
+print(ans1)
+print(ans2)
